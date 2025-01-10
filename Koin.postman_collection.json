@@ -1,0 +1,72 @@
+{
+	"info": {
+		"_postman_id": "4a982da6-ee8e-4786-badc-1478bf81707c",
+		"name": "Koin",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29501493"
+	},
+	"item": [
+		{
+			"name": "Get Price status",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/stats?coin=bitcoin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"stats"
+					],
+					"query": [
+						{
+							"key": "coin",
+							"value": "bitcoin"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get derivate",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/deviation?coin=matic-network",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"deviation"
+					],
+					"query": [
+						{
+							"key": "coin",
+							"value": "matic-network"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
